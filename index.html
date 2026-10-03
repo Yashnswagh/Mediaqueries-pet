@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header , .logo , .nav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .logo{
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .nav{
+            gap: 20px;
+        }
+        ol{
+            list-style-type: none;
+        }
+       body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 50px;
+       }
+
+    /* Image section */
+        .bg-section img{
+            position: absolute;
+            height: 400px;
+            width: 100% !important;
+            object-fit: cover;
+        }
+        .content{
+           position: relative;
+           display: block;
+         left: 20px;
+         top: 120px;
+         display: flex;
+         flex-direction: column;
+          width: 30%;
+          align-items: center;
+          font-size: 30px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button{
+            padding: 20px,40px;
+            background-color: palevioletred;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .card-group{
+            position: relative;
+            top: 200px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card img{
+            width: 100px;
+            
+        }
+        .card{
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            width: 300px;
+            padding: 10px;
+
+        }
+        .blue{
+            background-color: lightskyblue;
+        }
+        .yellow{
+            background-color: tan;
+        }
+        .pink{
+            background-color: pink;
+        }
+        @media (max-width: 500px){
+            .card-group{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            h2{
+                font-size: 25px;
+                font-family:fantasy;
+                font-weight: 800;
+            }
+            .header{
+                background-color: yellow;
+            }
+            .image img{
+                width: 300px;
+                 width: 96% !important;
+            }
+            li{
+                font-weight: 500;
+                font-size: 14px;
+            }
+            .logo ol li{
+                font-size: 22px;
+            }
+            body{
+                background-color: coral;
+            }
+        }
+
+    </style>
+</head>
+<body>  
+    <div class="header">
+        <div class="logo">
+            <ol>
+
+                <li>🐾</li>
+                <li>Paws & Play</li>
+            </ol>
+
+        </div>
+        <ol class="nav">
+
+            <li>Home</li>
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Fun Facts</li>
+        </ol>
+    </div>
+
+    <div class="bg-section">
+        <div class="image">
+            <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11181518/202104golden-retriever-puppy-sitting-in-field.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>Dogs make life brighter!</h2>
+        <button>Learn More</button>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card blue">
+            <img src="https://media.istockphoto.com/id/2057539888/vector/blue-pet-paw-silhouette-isolated-on-white-background-watercolor.jpg?s=612x612&w=0&k=20&c=v3GcO9Rn6asH35zXXdtu0q_SdV78ll8L9gJRxh1yY6M=" alt="">
+            <h3>About</h3>
+            <p>Dogs are loyal, friendly and super fun!</p>
+        </div>
+
+
+        <div class="card yellow">
+            <img src="https://t4.ftcdn.net/jpg/01/96/12/13/360_F_196121399_9wCQ9T8H6rcCjhWoCeYEUQJ5ExRpgYif.jpg" alt="">
+            <h3>Gallery</h3>
+            <p>Cute moments captured!</p>
+        </div>
+        
+        
+        <div class="card pink">
+            <img src="https://w7.pngwing.com/pngs/93/1022/png-transparent-cartoon-heart-heart-love-heart-cartoon.png" alt="">
+            <h3>Fun Facts</h3>
+            <p>Dogs can learn over 100 words!</p>
+        </div>
+    </div>
+</body>
+</html>
